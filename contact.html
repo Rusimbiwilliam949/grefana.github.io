@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – Grefana Ltd</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container header-container">
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="Grefana Ltd Logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="knowledge.html">Knowledge Hub</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-toggle">&#9776;</div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero contact-hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Contact Grefana Ltd</h1>
+      <p>We are ready to help you improve your livestock and crop production.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-main">
+  <div class="container contact-container">
+    <!-- Contact Form -->
+    <div class="contact-left">
+      <h2>Send Us a Message</h2>
+      <p>Fill out the form and our team will get back to you promptly.</p>
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info & Map -->
+    <div class="contact-right">
+      <h2>Contact Information</h2>
+      <div class="card-grid contact-info-cards">
+        <div class="card">
+          <h3>📍 Address</h3>
+          <p>Address: House 3, 7 KG 147 St, Kigali- Rwanda</p>
+        </div>
+        <div class="card">
+          <h3>📞 Phone</h3>
+          <p>+250 786 465 441</p>
+        </div>
+        <div class="card">
+          <h3>✉️ Email</h3>
+          <p>info@grefanaltd.com</p>
+        </div>
+        <div class="card">
+          <h3>🌐 Website</h3>
+          <p>www.grefanaltd.com</p>
+        </div>
+      </div>
+
+      <h2>Find Us on Map</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5086803608137!2d30.126695674050186!3d-1.9496388367089903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca762b76c22a9%3A0xc41197c5e4e4188!2sAfro%20Ark!5e0!3m2!1sen!2srw!4v1757463490131!5m2!1sen!2srw" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta">
+  <div class="container">
+    <h2>Ready to Transform Your Farm?</h2>
+    <p>Reach out today and let’s implement innovative livestock and crop solutions together.</p>
+    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Grefana Ltd. All rights reserved.</p>
+    <p>
+      <a href="solutions.html">Solutions</a> | 
+      <a href="knowledge.html">Knowledge Hub</a> | 
+      <a href="contact.html">Contact</a>
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Form submission alert
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for contacting Grefana Ltd. We will get back to you shortly!');
+    form.reset();
+  });
+</script>
+</body>
+</html>
